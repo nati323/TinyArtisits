@@ -1,0 +1,364 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url('src/assets/startscreen.png') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+header{
+    position: relative;
+}
+
+
+.userData{
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 85%;
+    height: 10vh;
+    width: 30vh;
+    background-color: #e92d43;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.start-btn{
+    position: absolute;
+    top: 65%;
+    left: 38%;
+    margin: 15px;
+    border-radius: 50px;
+    color: white;
+    background-color: #e92d43;
+    width: 35vh;
+    height: 10vh;
+    font-size: 2.5rem;
+}
+.start-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-check{
+    text-align: center;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.login-check-btn{
+    display: flex;
+    gap: 25px;
+}
+.login-check-btn>button{
+    border: none;
+    font-size: 2rem;
+    border-radius: 20px;
+    background-color: rgba(150,200,255,0.8);
+    width: 15vw;
+    height: 25vh;
+}
+.sign-up>h3{
+justify-self: center;
+align-content: center;
+background-color: #e92d43;
+text-align: center;
+width: 10vw;
+height: 8vh;
+border-radius: 25px;
+font-size: 1.5rem;
+color: white;
+}
+.name-age-choice{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+.name-age-choice>div>button{
+    margin-top: 25px;
+    color: white;
+    background-color: #e92d43;
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.8);
+    border-radius: 20px;
+    height: 10vh;
+    width: 25vw;
+    font-size: 3.5rem;
+}
+.name-screen{
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.name-screen>input{
+    border: 3px solid #128d67;
+    border-radius: 40px;
+    width: 75vw;
+    height: 8vh;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.age-screen{
+    position: absolute;
+    left: 7%;
+    top: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    font-size: 3rem;
+}
+.age-container{
+    display: flex;
+    gap: 65px;
+}
+.age-choice{
+    font-size: 4rem;
+    width: 18vw;
+    height: 17vh;
+    padding: 8px;
+    border: none;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.8);
+    background-color: #27c695;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.email-password-reg{
+    position: absolute;
+    top: 15%;
+    left: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.email-password-reg>button{
+    color: white;
+    background-color: #e92d43;
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.8);
+    border-radius: 20px;
+    height: 10vh;
+    width: 25vw;
+    font-size: 3.5rem;
+}
+.email-password-reg-input{
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.email-password-reg-input>input{
+    border: 3px solid #128d67;
+    border-radius: 40px;
+    width: 75vw;
+    height: 8vh;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login>h3{
+    justify-self: center;
+    align-content: center;
+    background-color: #e92d43;
+    text-align: center;
+    width: 10vw;
+    height: 8vh;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    color: white;
+}
+.login>form{
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.login>form>input{
+    border: 3px solid #128d67;
+    border-radius: 40px;
+    width: 75vw;
+    height: 8vh;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.login>form>button{
+    color: white;
+    background-color: #e92d43;
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.8);
+    border-radius: 20px;
+    height: 10vh;
+    width: 25vw;
+    font-size: 3.5rem;
+    margin-right: 25px;
+}
+.drawing-choice{
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(2,150px);
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
+    padding: 125px;
+}
+.drawing{
+    background-color: lightblue;
+    border-radius: 10px;
+    width:  15vw;
+    height: 30vh;
+    border: none;
+}
+.drawing>img{
+    width: 100%;
+    height: 100%;
+}
+.drawing-board{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 216, 76);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.chosen-drawing{
+    border-radius: 25px;
+    padding: 8px;
+    margin: 8px;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chosen-drawing img {
+    width: 100%; 
+    height: 100%;
+    object-fit: contain; 
+}
+
+.control-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.control-panel-func{
+    position: absolute;
+    left: 5%;
+    top: 85%;
+}
+.control-panel-func>button{
+    background-color: transparent;
+    border: none;
+}
+.control-panel-func>button>img{
+    width: 75px;
+    height: 75px;
+}
+.control-panel-colors{
+    display: grid;
+    grid-template-columns:repeat(4, auto);
+    grid-auto-rows: auto;
+    gap: 25px;
+}
+.color-btn{
+    background-color: transparent;
+    border: none;
+}
+.color-btn>img{
+    width: 50px;
+    height: 50px;
+}
+.main-game{
+    position: absolute;  
+    top: 0;              
+    left: 0;             
+    width: 100vw;        
+    height: 101vh;       
+    display: flex;       
+    justify-content: center; 
+    align-items: center;               
+    background-color: #ffd84c; 
+    z-index: 10;        
+
+}
+.canvas{
+    border: 5px solid black;
+    border-radius: 15px;
+    position: absolute;
+    top: 1%;
+    left: 39%;
+    width: 60vw;
+    height: 100vh;
+    padding: 2px;
+    
+    
+}
+.user-drawings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.gallery-title{
+    font-size: 1.75rem;
+    color: white;
+    background-color: #e92d43;
+    padding: 12px;
+    border-radius: 25px;
+    
+}
+.drawings-contianer{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+.user-drawing{
+    border-radius: 15px;
+    width: 20vw;
+    
+}
+/* Island .Stack .Shape:nth-child(3),
+.Island .Stack .Shape:nth-child(6),
+.Island .Stack .Shape:nth-child(9),
+.ToolIcon__lock,
+.App-toolbar-content button[aria-label="Edit"],
+.App-toolbar-content button[aria-label="Duplicate"] {
+  display: none !important;
+} */
