@@ -16,19 +16,34 @@ header{
 
 
 .userData{
+    margin: 5px;
     position: absolute;
-    border: 2px solid black;
+    border: none;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     left: 85%;
     height: 10vh;
-    width: 30vh;
+    width: 14vw;
     background-color: #e92d43;
     color: #ffffff;
     font-weight: bold;
     font-size: 1.5rem;
+}
+.logout-btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    position: absolute;
+    left: 2%;
+    height: 10vh;
+    width: 10vw;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #e92d43;
+    border-radius: 25px;
+    font-weight: bold;
+    
 }
 .start-btn{
     position: absolute;
@@ -220,6 +235,7 @@ color: white;
     font-size: 3.5rem;
     margin-right: 25px;
 }
+
 .drawing-choice{
     display: grid;
     grid-template-columns: repeat(5, 150px);

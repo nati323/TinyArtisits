@@ -158,6 +158,7 @@ function TinyArtisits() {
   function Logout() {
     localStorage.removeItem("token");
     setCurrentUser(null);
+    window.location.reload();
   }
 
   console.log(currentUser);
@@ -214,7 +215,6 @@ function TinyArtisits() {
     DrawingToPng();
     console.log(savedImg);
     toggleMainGame();
-    window.location.reload();
   }
   ///////////////////////////////////////Toggle Func ///////////////////////////////////////
   function toggleStartGame() {
@@ -256,7 +256,9 @@ function TinyArtisits() {
                 Hi {currentUser.username ? currentUser.username : "Guest"}
               </span>
             </div>
-            <button onClick={Logout}>Logout</button>
+            <button onClick={Logout} className="logout-btn">
+              Logout
+            </button>
           </div>
         )}
       </header>
