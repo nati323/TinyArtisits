@@ -16,7 +16,10 @@ app.use(express.json());
 
 
 
-mongoose.connect("mongodb+srv://netaneld2:a1346795B@mygamedb.p5nxl.mongodb.net/mygamedb").then(()=>console.log("connected to MangoDB"))
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(()=>console.log("connected to MangoDB"))
 .catch(err => console.error("MongoDB connection error:", err));
 
 const UserSchema = new mongoose.Schema({
@@ -72,7 +75,6 @@ router.post("/login", async (req, res) => {
 // verfiy token Route
 router.post("/verify-token", async (req, res) => {
   const token = req.headers.authorization?.split(" ")[1]; 
-  console.log("JWT Secret:", process.env.JWT_SECRET);
   if (!token){
     console.log("no token") 
     return res.json({ valid: false });}
